@@ -11,7 +11,7 @@ const TOP_P = 1;
 const FREQUENCY = 0.5;
 const PRESENCE = 0.5;
 
-async function getResponse(question) {
+async function getAnswer(question) {
   const PROMPT = question;
 
   // Generate text using the GPT-3 model
@@ -42,4 +42,4 @@ async function getResponse(question) {
     console.log(error);
   }
 }
-module.exports = {getResponse}
+module.exports = {getAnswer}
